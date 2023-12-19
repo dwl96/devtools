@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var toolSelected: ToolType = .About
-    
     var body: some View {
-        NavigationSplitView {
+        NavigationView {
             List {
-                Text("hi")
+                ForEach(ToolType.allCases, id: \.self) { tool in
+                    NavigationLink {
+                        switch tool {
+                        case .RegexMatcher:
+                            RegexMatcherView()
+                        }
+                    } label: {
+                        Text(tool.rawValue)
+                    }
+                }
             }
-        } detail: {
-            Text("Detail")
+            .listStyle(.sidebar)
+            AboutView()
         }
-
     }
 }
 

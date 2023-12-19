@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED327E822B324D4700D7A90B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED327E812B324D4700D7A90B /* AboutView.swift */; };
+		ED327E862B3250AA00D7A90B /* RegexMatcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED327E852B3250AA00D7A90B /* RegexMatcherView.swift */; };
 		ED8180172B32474400916BB5 /* devtoolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8180162B32474400916BB5 /* devtoolsApp.swift */; };
 		ED8180192B32474400916BB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8180182B32474400916BB5 /* ContentView.swift */; };
 		ED81801B2B32474400916BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81801A2B32474400916BB5 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED327E812B324D4700D7A90B /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		ED327E852B3250AA00D7A90B /* RegexMatcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexMatcherView.swift; sourceTree = "<group>"; };
 		ED8180132B32474300916BB5 /* devtools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devtools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8180162B32474400916BB5 /* devtoolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devtoolsApp.swift; sourceTree = "<group>"; };
 		ED8180182B32474400916BB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED327E832B32508E00D7A90B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				ED327E842B32509400D7A90B /* RegexMatcher */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		ED327E842B32509400D7A90B /* RegexMatcher */ = {
+			isa = PBXGroup;
+			children = (
+				ED327E852B3250AA00D7A90B /* RegexMatcherView.swift */,
+			);
+			path = RegexMatcher;
+			sourceTree = "<group>";
+		};
 		ED81800A2B32474300916BB5 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +117,14 @@
 		ED8180152B32474300916BB5 /* devtools */ = {
 			isa = PBXGroup;
 			children = (
+				ED327E832B32508E00D7A90B /* Tools */,
 				ED8180162B32474400916BB5 /* devtoolsApp.swift */,
 				ED8180182B32474400916BB5 /* ContentView.swift */,
 				ED81801A2B32474400916BB5 /* Assets.xcassets */,
 				ED81801F2B32474400916BB5 /* devtools.entitlements */,
 				ED81801C2B32474400916BB5 /* Preview Content */,
 				ED8180412B3248F500916BB5 /* ToolType.swift */,
+				ED327E812B324D4700D7A90B /* AboutView.swift */,
 			);
 			path = devtools;
 			sourceTree = "<group>";
@@ -262,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED327E822B324D4700D7A90B /* AboutView.swift in Sources */,
 				ED8180422B3248F500916BB5 /* ToolType.swift in Sources */,
 				ED8180192B32474400916BB5 /* ContentView.swift in Sources */,
 				ED8180172B32474400916BB5 /* devtoolsApp.swift in Sources */,
+				ED327E862B3250AA00D7A90B /* RegexMatcherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

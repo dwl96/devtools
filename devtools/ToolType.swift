@@ -6,8 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
 
-enum ToolType: CaseIterable {
-    case About
-    case RegexMatcher
+enum ToolType: String, CaseIterable {
+    case RegexMatcher = "Regex Matcher"
 }
